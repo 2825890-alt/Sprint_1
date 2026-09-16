@@ -10,20 +10,19 @@ for part in parts:
             value = int(num_str)
             minutes = value * 60
             total_minutes += minutes
-            print(f'{unit} = {minutes} мин')
-
+            
         elif unit.endswith('m'):
             num_str = unit.replace('m', '')
             value = int(num_str) 
             minutes = value  
             total_minutes += minutes 
-            print(f'{unit} = {minutes} мин')
+            
 
         elif unit.endswith('s'):
             num_str = unit.replace('s', '')
             value = int(num_str)
             minutes = value / 60 
             total_minutes += minutes
-            print(f'{unit} = {minutes} мин')   
+             
 
 print(f"Общее количество минут: {total_minutes}") 
